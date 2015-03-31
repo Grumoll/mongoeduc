@@ -32,7 +32,7 @@ function UsersDAO(db) {
         // New +
         users.insert(user, function (err, result) {
             "use strict";
-            callback(err, result[0]);
+            callback(err, result);
         });
         // Old +
         //callback(Error("addUser Not Yet Implemented!"), null);
